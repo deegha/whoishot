@@ -1,0 +1,68 @@
+.imageContainer {
+  width: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px 1px #fff;
+  position:relative; 
+
+  .closeBtnContainer {
+    width: 85%;
+    background-color: #000;
+    opacity: 0.2;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px 33px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 2;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    .closeBtn {
+      cursor: pointer;
+      color: #fff;
+      font-weight: 900;
+    }
+  }
+}
+
+.filter {
+  width: 99px;
+  margin: 10px; 
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #fff;
+  position :relative;
+  animation: slideInFromLeft 0.1s ease-in ;
+
+} 
+
+.filterActive {
+  width: 99px;
+  margin: 10px; 
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #b2bec3;
+  position :relative;
+  animation: slideInFromLeft 0.1s ease-in ;
+} 
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+

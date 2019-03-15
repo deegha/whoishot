@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+
+  .line {
+    //border-left: 2px solid #ced6e0; 
+
+    .point {
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: -11px;
+      color: #b2bec3;
+      margin-top: 20px;
+      span {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #b2bec3;
+        margin-right: 10px
+      }
+    }
+
+    .pointSelected {
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: -11px;
+      color: #00bcd4;
+      margin-top: 20px;
+      animation: scaleUp 1s ease-in ;
+      span {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #00bcd4;
+        margin-right: 10px
+      }
+    }
+  }
+}
+
+
+@keyframes scaleUp {
+  0% {
+    font-size: 15;
+  }
+  80% {
+    font-size: 16;
+  }
+  100% {
+    font-size: 15;
+  }
+}

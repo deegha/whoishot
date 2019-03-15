@@ -1,0 +1,20 @@
+.component {
+  display: block;
+  position: relative;
+  width: 100%;
+  font-size: 50px;
+  line-height: 1em;
+  border-top: 2px solid #ced6e0;
+
+  .sliderButton {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 0.25em;
+    background: #ced6e0;
+    top: -0.26em;
+    left: 0;
+  }
+}
