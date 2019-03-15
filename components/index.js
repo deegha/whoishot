@@ -7,6 +7,7 @@ import { DropZone } from './dropzone/dropZone'
 import * as ImageFilter from './imageFilter/imageFilter'
 import { SliderBar } from './slider/slider'
 import { Steps } from './steps/steps'
+import { TextInput } from './textInput/textinput'
 
 export {
   Head,
@@ -17,5 +18,6 @@ export {
   DropZone,
   ImageFilter,
   SliderBar,
-  Steps
+  Steps,
+  TextInput
 }

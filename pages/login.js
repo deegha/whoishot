@@ -1,7 +1,12 @@
-import { LandingPage } from '../views'
-class LoginPage extends React.Component {
+import { LoginPage } from '../views'
+class Login extends React.Component {
 
-  state = { width: 0, height: 0 }
+  state = { 
+    width: 0, 
+    height: 0 ,
+    email: '',
+    password: ''
+  }
 
   componentDidMount() {
     this.updateWindowDimensions()
@@ -16,11 +21,15 @@ class LoginPage extends React.Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight })
   }
 
+  onChange = (feild, value) => this.setState({
+    [feild]: value
+  })
+
   render () {
     return (
-      <LandingPage {...this.state} />
+      <LoginPage {...this.state} onChange={this.onChange}/>
     )
   }
 }
 
-export default LoginPage
+export default Login

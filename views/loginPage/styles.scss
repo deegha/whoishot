@@ -1,3 +1,46 @@
 .container {
   padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  .imageSlider {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 50px;
+  } 
+  .form {
+    width: 35%;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      color: #00bcd4;
+    }
+    .formController {
+      width: 300px;
+      margin: 10px 0;
+    }
+    .fb {
+      color: #ffffff;
+      background-color: #29487d;
+      border-radius: 8px;
+      padding: 14px;
+      width: 273px;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .seperator {
+      color: #bdc3c7;
+      width: 300px;
+      opacity: 0.5;
+      margin: 20px 0;
+    }
+  }
 }

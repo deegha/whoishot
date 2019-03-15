@@ -1,0 +1,31 @@
+.sliderContainer {
+  width: 100%;
+  padding: 5px;
+  max-width: 310px;
+  // box-shadow: 0 0 8px 8px white inset;
+  img {
+    width: 100%;
+    // box-shadow: 0 0 8px 8px white inset
+    animation: slideIn 10s ease;
+  }
+
+  
+}
+
+@keyframes slideIn {
+  0% {
+     opacity:0
+  }
+  20% {
+    opacity:0.5
+  }
+  50% {
+    opacity:1
+  }
+  80% {
+    opacity:1
+  } 
+  100% {
+    opacity:0;
+  }
+}
